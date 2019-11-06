@@ -1,0 +1,34 @@
+[/]
+quake-height-percent=40
+quake-specific-monitor=0
+tab-position='top'
+sidebar-on-right=false
+terminal-title-style='normal'
+theme-variant='system'
+use-tabs=false
+enable-wide-handle=false
+app-title='${appName}: ${sessionName}'
+prompt-on-delete-profile=true
+terminal-title-show-when-single=false
+window-style='borderless'
+
+[profiles]
+list=['2b7c4080-0ddd-46c5-8f23-563fd3ba789d']
+
+[profiles/2b7c4080-0ddd-46c5-8f23-563fd3ba789d]
+foreground-color='#839496'
+visible-name='Júlio'
+palette=['#073642', '#DC322F', '#859900', '#B58900', '#268BD2', '#D33682', '#2AA198', '#EEE8D5', '#43435F5F7373', '#CB4B16', '#586E75', '#657B83', '#839496', '#6C71C4', '#93A1A1', '#FDF6E3']
+bold-is-bright=true
+badge-color='#AC7EA8'
+badge-color-set=false
+use-system-font=false
+cursor-colors-set=false
+highlight-colors-set=false
+use-theme-colors=false
+bold-color-set=false
+font='Hack Nerd Font 10'
+terminal-title='${id}: ${title}'
+background-color='#002B36'
+background-transparency-percent=0
+shortcut='<Shift><Super>q'
