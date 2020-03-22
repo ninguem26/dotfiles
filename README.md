@@ -16,6 +16,17 @@ For notifications to work, install the Dunst notification daemon, following the 
 
 For screen back light control, install [Light](http://haikarainen.github.io/light/).
 
+#### If permission is needed
+
+Maybe light won't work since it need permission to access some files. If that happens, give the permission needed with:
+
+> ~$ chmod a+w /sys/class/backlight/intel_backlight/brightness
+> ~$ chmod a+w /sys/class/backlight/intel_backlight/max_brightness
+
+#### If the screen turn black when the light is at the minimum value
+
+In this case, just execute `light -N 5` to define the minimum light value as 5. You can choose any value if you want. 
+
 ## Other tips
 
 - Media control can present some problems if the output device code is diferent from the one in i3/config. If that happens, just change the code in it's respective lines.
