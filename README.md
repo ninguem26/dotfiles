@@ -20,8 +20,7 @@ For screen back light control, install [Light](http://haikarainen.github.io/ligh
 
 Maybe light won't work since it need permission to access some files. If that happens, give the permission needed with:
 
-> ~$ chmod a+w /sys/class/backlight/intel_backlight/brightness
-> ~$ chmod a+w /sys/class/backlight/intel_backlight/max_brightness
+> ~$ chmod 4755 /usr/bin/light 
 
 #### If the screen turn black when the light is at the minimum value
 
