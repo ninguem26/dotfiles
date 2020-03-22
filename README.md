@@ -26,6 +26,21 @@ Maybe light won't work since it need permission to access some files. If that ha
 
 In this case, just execute `light -N 5` to define the minimum light value as 5. You can choose any value if you want. 
 
+### Touchpad
+
+Warning: this only works in xorg configuration with libinput.
+
+For touchpad tapping and natural scrolling to work, edit the touchpad catchall configuration in libinput config file at `/usr/share/X11/xorg.conf.d/40-libinput.conf` to the code bellow:
+
+> Section "InputClass"  
+> &nbsp;&nbsp;&nbsp;&nbsp;Identifier "libinput touchpad catchall"  
+> &nbsp;&nbsp;&nbsp;&nbsp;MatchIsTouchpad "on"  
+> &nbsp;&nbsp;&nbsp;&nbsp;MatchDevicePath "/dev/input/event*"  
+> &nbsp;&nbsp;&nbsp;&nbsp;Driver "libinput"  
+>	&nbsp;&nbsp;&nbsp;&nbsp;Option "Tapping" "on"  
+>	&nbsp;&nbsp;&nbsp;&nbsp;Option "NaturalScrolling" "True"  
+> EndSection
+
 ## Other tips
 
 - Media control can present some problems if the output device code is diferent from the one in i3/config. If that happens, just change the code in it's respective lines.
