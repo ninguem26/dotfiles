@@ -226,6 +226,7 @@ exec_always feh --bg-scale /home/julio/Imagens/wallpaper.jpg
 exec_always xrandr --output VGA-1 --primary --mode 1360x696 --pos 0x0 --rotate normal
 exec_always compton
 exec_always light -N 5
+exec_always xset r rate 350 30
 
 # Start-up applications
 
