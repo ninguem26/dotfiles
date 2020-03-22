@@ -195,13 +195,16 @@ bar {
 }
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle # mute sound
+# increase sound volume
+bindsym XF86AudioRaiseVolume exec --no-startup-id "pactl set-sink-volume 0 +5%; notify-send 'volume up'"; 
+# decrease sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id "pactl set-sink-volume 0 -5%; notify-send 'volume down'"; 
+# mute sound
+bindsym XF86AudioMute exec --no-startup-id "pactl set-sink-mute 1 toggle; notify-send 'MUTE'"; 
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 # Touchpad controls
 bindsym XF86TouchpadToggle exec ~/.config/i3/toggletouchpad.sh # toggle touchpad
@@ -222,9 +225,10 @@ bindsym --release ctrl+Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 -o 
 exec_always feh --bg-scale /home/julio/Imagens/wallpaper.jpg
 exec_always xrandr --output VGA-1 --primary --mode 1360x696 --pos 0x0 --rotate normal
 exec_always compton
+exec_always light -N 5
 
 # Start-up applications
 
 exec google-chrome
-exec telegram-desktop
+exec Telegram
 exec slack

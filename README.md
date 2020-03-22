@@ -18,17 +18,13 @@ For screen back light control, install [Light](http://haikarainen.github.io/ligh
 
 #### If permission is needed
 
-Maybe light won't work since it need permission to access some files. If that happens, give the permission needed with:
+Maybe Light won't work since it need permission to access some files. If that happens, give the permission needed with:
 
-> ~$ chmod 4755 /usr/bin/light 
-
-#### If the screen turn black when the light is at the minimum value
-
-In this case, just execute `light -N 5` to define the minimum light value as 5. You can choose any value if you want. 
+> ~$ chmod 4755 /usr/bin/light
 
 ### Touchpad
 
-Warning: this only works in xorg configuration with libinput.
+*Warning: this only works in xorg configuration with libinput.*
 
 For touchpad tapping and natural scrolling to work, edit the touchpad catchall configuration in libinput config file at `/usr/share/X11/xorg.conf.d/40-libinput.conf` to the code bellow:
 
