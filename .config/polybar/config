@@ -35,6 +35,7 @@ height = 20
 ;offset-y = 1%
 radius = 0.0
 fixed-center = false
+bottom = true
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -56,9 +57,9 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 font-3 = FontAwesome:style=Regular:size=10;1
 
-modules-left = i3
+modules-left = powermenu i3
 modules-center = 
-modules-right = filesystem pulseaudio memory cpu wlan eth battery date powermenu
+modules-right = filesystem pulseaudio memory cpu wlan eth battery date
 
 tray-position = right
 tray-padding = 2
@@ -109,6 +110,7 @@ ws-icon-1 = 2;
 ws-icon-2 = 3;
 ws-icon-3 = 4;
 ws-icon-4 = 5;
+ws-icon-5 = 6;
 
 ws-icon-default = 
 
@@ -294,9 +296,9 @@ expand-right = true
 
 format-spacing = 1
 
-label-open = 
-label-open-foreground = ${colors.secondary}
-label-close =  Cancel
+label-open = "   "
+label-open-foreground = ${colors.foreground}
+label-close = "  Cancel"
 label-close-foreground = ${colors.secondary}
 label-separator = |
 label-separator-foreground = ${colors.foreground-alt}
