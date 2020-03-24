@@ -134,6 +134,7 @@ assign [class="TelegramDesktop"] $workspace3
 assign [class="Code"] $workspace4
 assign [class="Spotify"] $workspace5
 assign [class="Thunderbird"] $workspace6
+assign [class="Rocket.Chat"] $workspace7
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -222,9 +223,9 @@ bindsym XF86AudioPrev exec playerctl previous
 bindsym $mod+shift+x exec i3lock --color "$bg-color"
 bindsym $mod+d exec /home/julio/.config/i3/rofi-setup
 
-bindsym Print exec "maim -u ~/Imagens/Captura-$(date -Iseconds | cut -d'+' -f1).png"
-bindsym shift+Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 ~/Imagens/Captura-$(date -Iseconds | cut -d'+' -f1).png"
-bindsym --release ctrl+Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 -o | xclip -selection clipboard -t image/png"
+bindsym Print exec "maim -u ~/Imagens/Captura-$(date -Iseconds | cut -d'+' -f1).png; notify-send 'Screen Captured'";
+bindsym shift+Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 ~/Imagens/Captura-$(date -Iseconds | cut -d'+' -f1).png; notify-send 'Screen Captured'";
+bindsym --release ctrl+Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 -o | xclip -selection clipboard -t image/png; notify-send 'Captured to Clipboard'";
 
 exec_always feh --bg-scale /home/julio/Imagens/wallpaper.jpg
 exec_always xrandr --output VGA-1 --primary --mode 1360x696 --pos 0x0 --rotate normal
@@ -238,3 +239,4 @@ exec polybar example --config=/usr/local/share/doc/polybar/config
 exec google-chrome
 exec Telegram
 exec thunderbird
+exec rocketchat-desktop
