@@ -334,9 +334,9 @@ margin-bottom = 5
 [module/spotify]
 type = custom/script
 interval = 1
-format-prefix = " "
+format-prefix = "♪ "
 format = <label>
-exec = python ~/.config/i3/polybar-spotify.py -f '{artist}: {song}'
+exec = python ~/.config/i3/polybar-spotify.py -t 45 -f '{play_pause} {song} - {artist}' -p ','
 format-underline = #1db954
 
 ; vim:ft=dosini
