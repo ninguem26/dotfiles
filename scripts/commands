@@ -1,0 +1,13 @@
+# For wireless config
+
+## List all wifi networks available
+
+~$ nmcli dev wifi
+
+## Connect into an new available wifi network
+
+~$ nmcli dev wifi connect "SSID" password "password"
+
+## Connect into an already know wifi network
+
+~$ nmcli c up id "SSID"
