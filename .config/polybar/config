@@ -57,8 +57,8 @@ font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
 font-3 = FontAwesome:style=Regular:size=10;1
 
-modules-left = powermenu i3
-modules-center = 
+modules-left = powermenu i3 spotify
+modules-center =
 modules-right = filesystem pulseaudio memory cpu wlan eth battery date
 
 tray-position = right
@@ -120,23 +120,23 @@ label-mode-foreground = #000
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %icon%
-label-focused-background = ${colors.background-alt}
-label-focused-underline= ${colors.primary}
+label-focused = %name% %icon%
+label-focused-background = ${colors.foreground-alt}
+label-focused-underline= ${colors.foreground}
 label-focused-padding = 2
 
 ; unfocused = Inactive workspace on any monitor
-label-unfocused = %icon%
+label-unfocused = %name% %icon%
 label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
-label-visible = %icon%
+label-visible = %name% %icon%
 label-visible-background = ${self.label-focused-background}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
 ; urgent = Workspace with urgency hint set
-label-urgent = %icon%
+label-urgent = %name% %icon%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
@@ -330,5 +330,13 @@ screenchange-reload = true
 [global/wm]
 margin-top = 5
 margin-bottom = 5
+
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = " "
+format = <label>
+exec = python ~/.config/i3/polybar-spotify.py -f '{artist}: {song}'
+format-underline = #1db954
 
 ; vim:ft=dosini
