@@ -216,8 +216,7 @@ bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 bindsym XF86TouchpadToggle exec ~/.config/i3/toggletouchpad.sh # toggle touchpad
 
 # Media player controls
-bindsym XF86AudioPlay exec playerctl play
-bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
@@ -227,6 +226,8 @@ bindsym $mod+d exec /home/julio/.config/i3/rofi-setup
 bindsym Print exec "maim -u ~/Imagens/Captura-$(date -Iseconds | cut -d'+' -f1).png; notify-send 'Screen Captured'";
 bindsym shift+Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 ~/Imagens/Captura-$(date -Iseconds | cut -d'+' -f1).png; notify-send 'Screen Captured'";
 bindsym --release ctrl+Print exec "maim -u -s -n -l -c 0.157,0.333,0.466,0.4 -o | xclip -selection clipboard -t image/png; notify-send 'Captured to Clipboard'";
+
+# Initial configuration
 
 exec_always feh --bg-scale /home/julio/Imagens/wallpaper.jpg
 exec_always xrandr --output VGA-1 --primary --mode 1360x696 --pos 0x0 --rotate normal
