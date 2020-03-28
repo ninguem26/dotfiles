@@ -31,7 +31,8 @@ floating_modifier $mod
 
 # start a terminal
 # bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec tilix -e zsh
+bindsym $mod+Return exec urxvt
+bindsym $mod+Shift+Return exec urxvt -e ranger
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -132,7 +133,7 @@ bindsym $mod+Shift+0 move container to workspace $workspace10
 assign [class="Google-chrome"] $workspace2
 assign [class="TelegramDesktop"] $workspace3
 assign [class="Code"] $workspace4
-assign [class="Spotify"] $workspace5
+for_window [class="Spotify"] move to workspace $workspace5
 assign [class="Thunderbird"] $workspace6
 assign [class="Rocket.Chat"] $workspace7
 
