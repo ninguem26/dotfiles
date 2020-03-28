@@ -37,6 +37,24 @@ For touchpad tapping and natural scrolling to work, edit the touchpad catchall c
 >	&nbsp;&nbsp;&nbsp;&nbsp;Option "NaturalScrolling" "True"  
 > EndSection
 
+### Powerline fonts
+
+For set Powerline fonts that can be used in [Powerline10k](https://github.com/romkatv/powerlevel10k), just follow the installation guide in the link.
+
+#### Terminess for Powerline fonts (Terminus fonts)
+
+Powerline Terminus fonts derivates (Terminess) are build in a diferent format (.pcf/bitmap) that the system (Ubuntu/Debian) keep locked by default. To unlock these fonts run the command line:
+
+> ~$ sudo unlink /etc/fonts/conf.d/70-no-bitmaps.conf
+
+### Polybar
+
+The configuration is set to Polybar as default. For Polybar installation, follow the instructions [here](https://github.com/polybar/polybar).
+
+### URxvt
+
+For URxvt, the style is set in .Xdefault, so any changes made need to be in this file.
+
 ## Other tips
 
 - Media control can present some problems if the output device code is diferent from the one in i3/config. If that happens, just change the code in it's respective lines.
