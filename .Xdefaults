@@ -29,8 +29,8 @@ URxvt.lineSpace:            0
 ! Fonts
 URxvt.allow_bold:           false
 /*URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
-URxvt*font: xft:Source Code Pro for Powerline:style=Regular:pixelsize=16, xft:Font Awesome 5 Free:style=Regular:size=14, xft:Font Awesome 5 Free:style=Solid:size=14, xft:Font Awesome 5 Brands:style=Regular:size=14, xft:FontAwesome:style=Regular:size=14
-URxvt*boldFont: xft:Source Code Pro for Powerline:style=Bold:pixelsize=16, xft:Font Awesome 5 Free:style=Regular:size=14, xft:Font Awesome 5 Free:style=Solid:size=14, xft:Font Awesome 5 Brands:style=Regular:size=14, xft:FontAwesome:style=Regular:size=14
+URxvt*font: xft:SauceCodePro Nerd Font Mono:style=Regular:pixelsize=16, xft:Font Awesome 5 Free:style=Regular:size=14, xft:Font Awesome 5 Free:style=Solid:size=14, xft:Font Awesome 5 Brands:style=Regular:size=14, xft:FontAwesome:style=Regular:size=14
+URxvt*boldFont: xft:SauceCodePro Nerd Font Mono:style=Bold:pixelsize=16, xft:Font Awesome 5 Free:style=Regular:size=14, xft:Font Awesome 5 Free:style=Solid:size=14, xft:Font Awesome 5 Brands:style=Regular:size=14, xft:FontAwesome:style=Regular:size=14
 
 ! Fix font space
 URxvt*letterSpace: -1
