@@ -240,6 +240,7 @@ exec_always xrandr --output VGA-1 --primary --mode 1360x696 --pos 0x0 --rotate n
 exec_always compton
 exec_always light -N 5
 exec_always xset r rate 350 30
+exec_always wal -R
 
 # Start-up applications
 
