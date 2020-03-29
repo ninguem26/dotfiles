@@ -17,6 +17,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-bundler'
+Plugin 'christoomey/vim-system-copy'
+Plugin 'dylanaraps/wal.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -30,7 +32,7 @@ set number
 
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme wal
 
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'

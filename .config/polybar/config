@@ -17,14 +17,14 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
-background = #2f343f
-background-alt = #444
-;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
-foreground-alt = #555
-primary = #ffb52a
-secondary = #e60053
+background = ${xrdb:color0:#2f343f}
+;background = #2f343f
+background-alt = ${xrdb:color2:#444}
+foreground = ${xrdb:color7:#dfdfdf}
+;foreground = #dfdfdf
+foreground-alt = ${xrdb:color6:#555}
+primary = ${xrdb:color2:#ffb52a}
+secondary = ${xrdb:color1:#e60053}
 alert = #bd2c40
 
 [bar/example]
@@ -322,7 +322,7 @@ type = custom/script
 interval = 1
 format-prefix = ""
 format = <label>
-exec = python ~/.config/i3/polybar-spotify.py -t 45 -f '{play_pause} {song} - {artist}' -p ','
+exec = python ~/.config/i3/polybar-spotify.py -t 45 -f '{play_pause} {song} - {artist}' -p ','
 format-underline = #1db954
 
 ; vim:ft=dosini
