@@ -22,6 +22,10 @@ Plugin 'tpope/vim-bundler'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 set number
 
 syntax enable
@@ -61,3 +65,4 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
 map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
