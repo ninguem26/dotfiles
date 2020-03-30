@@ -19,10 +19,11 @@
 [colors]
 background = ${xrdb:color0:#2f343f}
 ;background = #2f343f
-background-alt = ${xrdb:color2:#444}
+background-alt = ${xrdb:color8:#444}
 foreground = ${xrdb:color7:#dfdfdf}
 ;foreground = #dfdfdf
 foreground-alt = ${xrdb:color6:#555}
+foreground-alt-2 = ${xrdb:color3:#555}
 primary = ${xrdb:color2:#ffb52a}
 secondary = ${xrdb:color1:#e60053}
 alert = #bd2c40
@@ -133,7 +134,7 @@ label-unfocused-padding = 2
 
 ; visible = Active workspace on unfocused monitor
 label-visible = %name% %icon%
-label-visible-background = ${self.label-focused-background}
+label-visible-background = ${colors.foreground-alt-2}
 label-visible-underline = ${self.label-focused-underline}
 label-visible-padding = ${self.label-focused-padding}
 
