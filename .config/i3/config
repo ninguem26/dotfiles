@@ -208,11 +208,11 @@ client.urgent           $u-bg-color         $u-bg-color        $u-text-color    
 
 # Pulse Audio controls
 # increase sound volume
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 1 +5%
 # decrease sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% 
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 1 -5% 
 # mute sound
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 1 toggle
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
@@ -239,11 +239,11 @@ bindsym $mod+o move workspace to output left
 # Initial configuration
 
 exec_always feh --bg-scale /home/julio/Imagens/wallpaper.jpg
-exec_always xrandr --output eDP-1-1 --mode 1366x768 --pos 0x0 --rotate normal HDMI-1-1 --off
+exec_always xrandr --output eDP-1-1 --primary --mode 1366x768 --pos 1920x0 --rotate normal --output HDMI-1-1 --mode 1920x1080 --pos 0x0 --rotate normal
 exec_always compton
 exec_always light -N 5
 exec_always xset r rate 350 30
-exec_always wal -R
+exec_always wal -R -o ~/.config/dunst/wal.sh
 
 # Start-up applications
 
