@@ -169,7 +169,7 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
-label-connected =  %essid% %signal%%
+label-connected =  %signal%%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -203,7 +203,7 @@ label = %date% %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
+format-volume = <label-volume>
 label-volume =   %percentage%%
 label-volume-foreground = ${root.foreground}
 
@@ -327,3 +327,4 @@ exec = python ~/.config/i3/polybar-spotify.py -t 45 -f '{play_pause} {song} - {a
 format-underline = #1db954
 
 ; vim:ft=dosini
+
