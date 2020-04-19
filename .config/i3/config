@@ -184,8 +184,8 @@ set_from_resource $f-c-border-color    i3wm.color6 #f3f4f5
 set_from_resource $uf-bg-color         i3wm.color0 #2f343f
 set_from_resource $uf-text-color       i3wm.color7 #f3f4f5
 
-set_from_resource $u-bg-color         i3wm.color1 #2f343f
-set_from_resource $u-text-color       i3wm.color7 #f3f4f5
+set_from_resource $u-bg-color          i3wm.color1 #2f343f
+set_from_resource $u-text-color        i3wm.color7 #f3f4f5
 
 # window colors
 #                       border              background         text                  indicator          child_border
@@ -243,11 +243,11 @@ exec_always xrandr --output eDP-1-1 --primary --mode 1366x768 --pos 1920x0 --rot
 exec_always compton
 exec_always light -N 5
 exec_always xset r rate 350 30
-exec_always wal -R -o ~/.config/dunst/wal.sh
+exec_always $HOME/.config/wpg/wp_init.sh
 
 # Start-up applications
 
-exec polybar example --config=/usr/local/share/doc/polybar/config
+exec polybar example --config=/home/julio/dotfiles/.config/polybar/config
 exec google-chrome
 exec Telegram
 exec thunderbird

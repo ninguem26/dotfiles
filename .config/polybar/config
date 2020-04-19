@@ -17,15 +17,15 @@
 ;==========================================================
 
 [colors]
-background = ${xrdb:color0:#2f343f}
+background = ${xrdb:color0:#282828}
 ;background = #2f343f
-background-alt = ${xrdb:color8:#444}
-foreground = ${xrdb:color7:#dfdfdf}
+background-alt = ${xrdb:color8:#414141}
+foreground = ${xrdb:color7:#a89984}
 ;foreground = #dfdfdf
-foreground-alt = ${xrdb:color6:#555}
-foreground-alt-2 = ${xrdb:color3:#555}
-primary = ${xrdb:color2:#ffb52a}
-secondary = ${xrdb:color1:#e60053}
+foreground-alt = ${xrdb:color6:#458588}
+foreground-alt-2 = ${xrdb:color3:#d79921}
+primary = ${xrdb:color2:#689d6a}
+secondary = ${xrdb:color1:#cc241d}
 alert = #bd2c40
 
 [bar/example]
@@ -327,4 +327,3 @@ exec = python ~/.config/i3/polybar-spotify.py -t 25 -f '{play_pause} {song} - {a
 format-underline = #1db954
 
 ; vim:ft=dosini
-
