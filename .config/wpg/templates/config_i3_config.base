@@ -4,6 +4,18 @@ set $mod Mod4
 
 font pango:System San Francisco Display 8
 
+# i3-gaps
+# for_window [class=".*"] border pixel 0
+
+gaps inner 10
+gaps outer 5
+
+bindsym $mod+Shift+plus gaps inner all plus 5
+bindsym $mod+Shift+minus gaps inner all minus 5
+
+bindsym $mod+ctrl+plus gaps outer all plus 5
+bindsym $mod+ctrl+minus gaps outer all minus 5
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 

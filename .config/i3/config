@@ -4,6 +4,18 @@ set $mod Mod4
 
 font pango:System San Francisco Display 8
 
+# i3-gaps
+# for_window [class=".*"] border pixel 0
+
+gaps inner 10
+gaps outer 5
+
+bindsym $mod+Shift+plus gaps inner all plus 5
+bindsym $mod+Shift+minus gaps inner all minus 5
+
+bindsym $mod+ctrl+plus gaps outer all plus 5
+bindsym $mod+ctrl+minus gaps outer all minus 5
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -204,7 +216,7 @@ bindsym $mod+p move workspace to output right
 bindsym $mod+o move workspace to output left
 # Initial configuration
 
-exec_always feh --bg-scale /home/julio/Imagens/download.jpeg
+exec_always feh --bg-scale /home/julio/Imagens/wallpaper.jpg
 exec_always xrandr --output eDP-1-1 --primary --mode 1366x768 --pos 1920x0 --rotate normal --output HDMI-1-1 --mode 1920x1080 --pos 0x0 --rotate normal
 exec_always compton
 exec_always light -N 5
