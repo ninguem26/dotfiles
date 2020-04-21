@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/julio/.config/wpg/wallpapers/firefight.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#282828",
+        "foreground": "#ebd6b8",
+        "cursor": "#ebd6b8"
+    },
+    "colors": {
+        "color0": "#282828",
+        "color1": "#cc241d",
+        "color2": "#689d6a",
+        "color3": "#d79921",
+        "color4": "#b58900",
+        "color5": "#b16286",
+        "color6": "#458588",
+        "color7": "#a89984",
+        "color8": "#414141",
+        "color9": "#ff2016",
+        "color10": "#76dd7a",
+        "color11": "#ffcc1a",
+        "color12": "#eab101",
+        "color13": "#f76dac",
+        "color14": "#4cb9be",
+        "color15": "#ebd6b8"
+    }
+}

@@ -1,0 +1,18 @@
+[Base]
+main_fg       = {color7.strip}
+secondary_fg  = {color15.strip}
+main_bg       = {color0.strip}
+slider_bg     = {color4.strip}
+
+sidebar_and_player_bg                 = {color0.strip}
+cover_overlay_and_shadow              = 000000
+indicator_fg_and_button_bg            = {color4.strip}
+pressing_fg                           = FFFFFF 
+sidebar_indicator_and_hover_button_bg = {color12.strip}
+scrollbar_fg_and_selected_row_bg      = {color12.strip}
+pressing_button_fg                    = {color7.strip}
+pressing_button_bg                    = {color0.strip}
+selected_button                       = {color7.strip}
+miscellaneous_bg                      = {color6.strip}
+miscellaneous_hover_bg                = {color12.strip}
+preserve_1                            = FFFFFF

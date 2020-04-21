@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/julio/.config/wpg/wallpapers/captura.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#191818",
+        "foreground": "#99b9bb",
+        "cursor": "#99b9bb"
+    },
+    "colors": {
+        "color0": "#191818",
+        "color1": "#B58900",
+        "color2": "#C4900E",
+        "color3": "#D59821",
+        "color4": "#908875",
+        "color5": "#7A7487",
+        "color6": "#B26286",
+        "color7": "#99b9bb",
+        "color8": "#6b8182",
+        "color9": "#B58900",
+        "color10": "#C4900E",
+        "color11": "#D59821",
+        "color12": "#908875",
+        "color13": "#7A7487",
+        "color14": "#B26286",
+        "color15": "#99b9bb"
+    }
+}

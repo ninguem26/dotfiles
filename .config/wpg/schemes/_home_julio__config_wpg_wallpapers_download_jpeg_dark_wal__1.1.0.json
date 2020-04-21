@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/julio/.config/wpg/wallpapers/download.jpeg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#121518",
+        "foreground": "#eae2c2",
+        "cursor": "#eae2c2"
+    },
+    "colors": {
+        "color0": "#121518",
+        "color1": "#8A7663",
+        "color2": "#7D826E",
+        "color3": "#9E9175",
+        "color4": "#C8A979",
+        "color5": "#B3A984",
+        "color6": "#CCB688",
+        "color7": "#eae2c2",
+        "color8": "#a39e87",
+        "color9": "#8A7663",
+        "color10": "#7D826E",
+        "color11": "#9E9175",
+        "color12": "#C8A979",
+        "color13": "#B3A984",
+        "color14": "#CCB688",
+        "color15": "#eae2c2"
+    }
+}
