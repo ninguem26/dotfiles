@@ -58,3 +58,11 @@ For URxvt, the style is set in .Xdefault, so any changes made need to be in this
 ## Other tips
 
 - Media control can present some problems if the output device code is diferent from the one in i3/config. If that happens, just change the code in it's respective lines.
+
+## Other dependencies
+
+- [Spicetify](https://github.com/khanhas/Spicetify)
+- [pywal](https://github.com/dylanaraps/pywal)
+- [WPGTK](https://github.com/deviantfero/wpgtk)
+- [lightdm-gtk-greeter](https://www.archlinux.org/packages/extra/x86_64/lightdm-gtk-greeter/)
+- [i3-gaps](https://github.com/Airblader/i3)
